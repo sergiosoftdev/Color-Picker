@@ -1,0 +1,124 @@
+@import url(./modules/header.css);
+@import url(./modules/color-picker.css);
+
+:root{
+
+    --color-text: black;
+
+}
+
+@keyframes copied {
+    0%{
+        transform: translateY(0);
+    }
+
+    40%{
+        transform: translateY(-20px);
+    }
+
+    70%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(-5px);
+    }
+
+}   
+
+body{
+    margin: 0;
+    font-family: 'Zodiak';
+    overflow-x: hidden;
+    color: var(--color-text);
+    background-color: 		white;
+}
+
+.container{
+
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+h1, h2, h3{
+
+    font-family: 'Comico';
+    font-weight: bold;
+
+}
+
+.works{
+
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.works img{
+
+    width: 900px;
+    position: absolute;
+    z-index: -2;
+
+}
+
+.anchor-link{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.anchor-link svg{
+
+    opacity: 0;
+    margin-left: -24px;
+    visibility: hidden;
+
+    rotate: -90deg;
+
+    transition: 0.5s;
+
+
+}
+
+.anchor-link:hover svg{
+
+    margin-left: 0;
+    rotate: 0deg;
+    opacity: 0.3;
+    visibility: visible;
+
+}
+
+.copy::after{
+
+    content: "Copy";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.copied{
+
+    animation: 0.7s copied;
+
+}
+
+.copied::after{
+
+    content: "Copied!";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+

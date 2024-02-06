@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400&f[]=comico@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="img/color-picker.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header-nav container">
+        <div class="title">
+            <h1>Color Picker</h1>
+        </div>
+        <div class="navigation">
+            <ul>
+                <div class="anchor-link">
+                    <a href="index.html">Home</a>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 8L14 12L10 16" stroke="rgba(0,0,0,0.95)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </div>
+                <div class="anchor-link">
+                    <a href="https://www.linkedin.com/in/sergiosoftdev/">LinkedIn</a>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 8L14 12L10 16" stroke="rgba(0,0,0,0.95)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </div>
+                <div class="anchor-link">
+                    <a href="https://github.com/sergiosoftdev">Github</a>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 8L14 12L10 16" stroke="rgba(0,0,0,0.95)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="container works">
+            <h2>How Does it Work?</h2>
+            <p>Copy your favorite <b>#Hex-Color</b> to the text input and press Generate!</p>
+            <img src="img/Grad_12.png" alt="">
+        </section>
+
+        <div class="color-picker container">
+            <div id="color"></div>
+            <div class="picker-form">
+                <input type="text" id="colorInput" placeholder="000000">
+                <button onclick="myClick()" class="generate-button">Generate!</button>
+            </div>
+        </div>
+
+        <div class="flex-color container" id="flexColor">
+            <div class="color-basis"></div>
+            <div class="color-basis"></div>
+            <div class="color-basis"></div>
+            <div class="color-basis"></div>
+            <div class="color-basis"></div>
+            <div class="color-basis"></div>
+            <div class="color-basis"></div>
+            <div class="color-basis"></div>
+            <div class="color-basis"></div>
+        </div>
+
+        <div></div>
+
+        <section class="container recSection">
+
+            <h2>Color Palettes</h2>
+
+            <h3>#A4975F</h3>
+            <div class="flex-color container" id="firstRec">
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+            </div>
+            <h3>#FF1177</h3>
+            <div class="flex-color container" id="secRec">
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+            </div>
+            <h3>#99FF9C</h3>
+            <div class="flex-color container" id="thirdRec">
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+                <div class="color-basis"></div>
+            </div>
+            
+        </section>
+
+    </main>
+    
+
+    <script defer src="js/index.js"></script>
+</body>
+</html>

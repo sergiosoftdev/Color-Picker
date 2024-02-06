@@ -1,0 +1,104 @@
+.color-picker{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+    padding-bottom: 100px;
+
+}
+
+#color{
+    background-color: #000000;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+button{
+
+    font-family: 'Roboto Flex';
+
+}
+
+.generate-button{
+
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    padding-inline: 10px;
+    height: 30px;
+
+    transition: 0.2s;
+
+}
+
+.generate-button:hover{
+
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+
+}
+
+#colorInput{
+
+    font-family: 'Roboto Flex';
+    width: 170px;
+    background-color: hsl(0, 0%, 78%);
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-inline: 5px;
+
+    transition: 0.2s;
+
+}
+
+#colorInput:hover{
+
+    width: 200px;
+
+}
+
+#colorInput:focus{
+
+    outline: none;
+
+}
+
+
+.flex-color{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.color-basis{
+
+    background-color: rgb(206, 206, 206);
+    height: 100%;
+    width: 11.1%;
+
+    transition: 0.2s;
+
+}
+
+.recSection h2{
+
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.color-basis:hover{
+
+    cursor: pointer;
+    transform: translateY(-5px);
+
+}
