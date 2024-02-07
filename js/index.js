@@ -55,6 +55,38 @@ function generatePalette(hsl, flexParent){
 
 }
 
+function newGeneratePalette(hsl, flexParent){
+  let h = 10;
+  let index = 0;
+
+  const myInterval = setInterval(()=>{
+
+    if (index >= flexParent.children.length) {
+      clearInterval(myInterval); 
+      setTimeout(() => {
+        for(let elemento of flexParent.children){
+          elemento.classList.remove("animated")
+          console.log("hola");
+        }
+      }, 500);
+      return;
+    }
+
+    if(index < flexParent.children.length){
+
+      const elemento = flexParent.children[index];
+      elemento.style.backgroundColor = "hsl("+hsl["h"]+", "+hsl["s"]+"%,"+h+"%)";
+      elemento.setAttribute("data-color", "hsl("+hsl["h"]+", "+hsl["s"]+"%,"+h+"%)")
+      elemento.classList.add("animated")
+      h = h + 10;
+      index++;
+
+    }
+  }, 100)
+
+
+}
+
 function myClick(){
     
     let hexInput = document.getElementById("colorInput");
@@ -63,7 +95,7 @@ function myClick(){
     
     colorBall.style.backgroundColor = "#"+hexInput.value;
 
-    generatePalette(hexToHsl(hexInput.value), flexColor);
+    newGeneratePalette(hexToHsl(hexInput.value), flexColor);
 }
 
 

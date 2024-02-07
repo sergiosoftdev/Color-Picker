@@ -24,6 +24,21 @@
         transform: translateY(-5px);
     }
 
+}
+
+@keyframes generateAnimation {
+    0%{
+        transform: translateY(0);
+    }
+
+    40%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
 }   
 
 body{
@@ -31,7 +46,7 @@ body{
     font-family: 'Zodiak';
     overflow-x: hidden;
     color: var(--color-text);
-    background-color: 		white;
+    background-color: white;
 }
 
 .container{
@@ -122,3 +137,8 @@ h1, h2, h3{
 
 }
 
+.animated{
+
+    animation: 0.7s generateAnimation;
+
+}
